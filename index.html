@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LeadQual Agent — Waitlist | Wrooms</title>
+  <meta name="description" content="Governed AI lead qualification for SMBs. Join the LeadQual Agent waitlist." />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #141a22;
+      --text: #e8eef6;
+      --muted: #9aa8b8;
+      --accent: #3d9cf0;
+      --accent-hover: #5aadf5;
+      --border: #243041;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(ellipse at top, #152033 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1.25rem 3rem;
+    }
+    main {
+      width: 100%;
+      max-width: 36rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.25rem 0.7rem;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: clamp(1.45rem, 4.5vw, 1.85rem);
+      line-height: 1.25;
+      margin: 0 0 0.75rem;
+      font-weight: 700;
+    }
+    .sub {
+      color: var(--muted);
+      margin: 0 0 1.5rem;
+      font-size: 1rem;
+    }
+    ul {
+      margin: 0 0 1.75rem;
+      padding-left: 1.15rem;
+      color: var(--text);
+    }
+    li { margin-bottom: 0.55rem; }
+    li span { color: var(--muted); }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+    label {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    input[type="email"] {
+      width: 100%;
+      padding: 0.8rem 0.9rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #0e141c;
+      color: var(--text);
+      font-size: 1rem;
+    }
+    input[type="email"]:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 1px;
+    }
+    button {
+      margin-top: 0.35rem;
+      padding: 0.85rem 1rem;
+      border: none;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #061018;
+      font-weight: 650;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover { background: var(--accent-hover); }
+    .form-note {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin: 0.5rem 0 0;
+    }
+    .privacy {
+      margin-top: 1.25rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .goal {
+      margin-top: 1.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-align: center;
+    }
+    footer {
+      margin-top: 1.75rem;
+      font-size: 0.75rem;
+      color: #6b7a8c;
+      text-align: center;
+    }
+    footer a { color: #7a8fa8; text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="badge">Early access · Waitlist</div>
+    <h1>LeadQual Agent — governed AI lead qualification for SMBs</h1>
+    <p class="sub">Stop letting inbound leads die in the inbox. Qualify fast, hand off clean, stay in control.</p>
+    <ul>
+      <li><strong>Speed-to-lead</strong> — <span>AI qualifies inbound within minutes, not hours.</span></li>
+      <li><strong>Governed by design</strong> — <span>audit trail, human handoff rules, brand-safe replies.</span></li>
+      <li><strong>Built for SMB services</strong> — <span>HVAC, dental, home services &amp; mid-market ops — not endless custom consulting.</span></li>
+    </ul>
+
+    <!-- Prefer mailto for zero-host; replace action when hosted (e.g. Formspree / Workers). -->
+    <form action="mailto:sales@wrooms.ai" method="post" enctype="text/plain">
+      <label for="email">Work email</label>
+      <input id="email" name="email" type="email" required placeholder="you@company.com" autocomplete="email" />
+      <input type="hidden" name="interest" value="LeadQual Agent waitlist" />
+      <button type="submit">Join the waitlist</button>
+      <p class="form-note">
+        Form action: <code>mailto:sales@wrooms.ai</code> (works offline).
+        <strong>Needs host</strong> for a proper POST handler (Formspree, Cloudflare Workers, etc.) — replace <code>action</code> when live.
+      </p>
+    </form>
+
+    <p class="privacy">We only use your email for waitlist and early-access updates. No spam; unsubscribe anytime.</p>
+    <p class="goal">Goal: <strong>≥25</strong> on the waitlist before product spawn.</p>
+  </main>
+  <footer>
+    Wrooms · SpaceXAI · SUPER.VENTURES
+  </footer>
+</body>
+</html>
